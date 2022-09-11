@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Character Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Real-Time Character Counter</h2>
+        <textarea class="textarea" id="textarea" maxlength="50" placeholder="Please write your text here..."></textarea>
+        <div class="counter-container">
+            <p>
+                Total Characters: 
+                <span class="total-counter" id="total-counter"></span>
+            </p>
+            <p>
+                Remaining: 
+                <span class="remaining-counter" id="remaining-counter"></span>
+                <button class="btn" id="change">Change</button>
+                <select name="word-counter" id="word-counter">
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="150">150</option>
+                    <option value="200">200</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="custom">
+                        Custom
+                        <input type="text" class="custom-counter" id="custom-counter" maxlength="5" size="2" placeholder="Limit" autocomplete="off" autofocus>
+                    </option>
+                </select>
+                <button class="btn" id="ok">OK</button>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
